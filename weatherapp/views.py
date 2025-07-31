@@ -4,9 +4,8 @@ from django.shortcuts import render
 def weather_view(request):
     city = request.GET.get('city', 'Lahore')
     api_key = 'c0c47950c5e416de2c245db1c1da48d0'
-  # Replace with your real OpenWeatherMap API key from https://openweathermap.org/api
     
-    if api_key == 'YOUR_API_KEY':
+    if not api_key or api_key == 'YOUR_API_KEY':
         return render(request, 'weather.html', {
             'weather': {'error': 'Please configure your OpenWeatherMap API key in views.py'}
         })
