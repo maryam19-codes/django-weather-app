@@ -35,4 +35,4 @@ python manage.py runserver
 
 Visit http://127.0.0.1:8000/
 
-Do you want me to prepare the short GitHub-ready README.md file for your project (so you can directly copy-paste it into GitHub), or keep the detailed professional one?
+
